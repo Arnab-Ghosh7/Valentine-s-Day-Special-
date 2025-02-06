@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const loadingScreen = document.querySelector('.loading-screen');
     const bigHeart = document.querySelector('.big-heart');
@@ -35,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         setTimeout(() => {
             if (explosionText) {
+                explosionText.style.display = 'block';
                 explosionText.style.animation = 'text-reveal 1s ease-out forwards';
             }
         }, 1500);
